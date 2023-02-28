@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> made by prototrains, GUESS THE WORD</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--the code above is basically just adding bootstrap links so i can use bootstrap classes in the HTML part. this is for design mainly, so the size for the screen changes on different devices and different colours for the tags without having to use CSS-->
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
+
+<!--linking to the other files, in this case the CSS and JS-->
+</head>
+<body>
+	<center>
+     <h3> heyo this is prototrains GUESS THE WORD web app using HTML, CSS and mainly JS, made on codepen.io for RoDevs programming contest</h3>
+    <h2> please note that this game requires 2 players at the same computer as it is NOT realtime. </h2>
+    <h4> score will go up if the word is guessed correctly and the turn will change if the the word is guessed correctly or
+        if it has been guessed incorrectly. only one chance to guess the word per turn
+    </h4>
+    <br>
+		<h1>
+			Guess The Word - By prototrains
+		</h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<!--bootstrap classes that change the layout of the app depending on the device-->
+	<h3> Player 1 Login</h3>
+	<label> Username: </label>
+	<input type="text" id="player_1_name_input" class="form-control" placeholder="Player 1 Username">
+</div>
+<br>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<h3> Player 2 Login</h3>
+	<label> Username: </label>
+	<input type="text" id="player_2_name_input" class="form-control" placeholder="Player 2 Username">
+</div>
+<br>
+<br>
+<!--inputs for the usernames-->
+<button style="width:30%" class="btn btn-primary" onclick="addUser()">Login</button>
+</center>
+</body>
+</html>
